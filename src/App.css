@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.project{
+  max-width: 1000px;
+  width: 100%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 15px;
+}
+.pds{
+  border: 1px solid #ccc;
+  position: relative;
+
+}
+.pds a{
+  text-decoration: none;
+}
+.pdImg > img{
+  width: 100%;
+}
+.pdData{
+  padding: 0 10px;
+  letter-spacing: 1px;
+  padding-bottom: 80px;
+
+}
+.title{
+  font-size: 18px;
+  color: #000;
+}
+.money{
+  position: absolute;
+  bottom: 0;
+  width: 92%;
+}
+.price{
+  color: #ccc;
+  font-size: 14px;
+  text-decoration:line-through;
+}
+.discount{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.discount span{
+  color: red;
+}
+.discount  img{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+  .project{
+    grid-template-columns: repeat(2,1fr);
+    padding: 0 10px;
+  }
+  .pdData{
+    padding-bottom: 11vw;
+  }
+  .title{
+    font-size: 2.5vw;
+  }
+  .price{
+    font-size: 2vw;
+    margin-bottom: -5px;
+  }
+  .discount span{
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width:414px) {
+  .title{
+    font-size: 3.5vw;
+  }
+  .price{
+    font-size: 3vw;
+  }
+  .discount span{
+    font-size: 3.5vw;
+  }
+}
